@@ -1,4 +1,4 @@
-# Generated from grammar\callisto.g4 by ANTLR 4.13.0
+# Generated from callisto.g4 by ANTLR 4.13.0
 from antlr4 import *
 if "." in __name__:
     from .callistoParser import callistoParser
@@ -9,88 +9,43 @@ else:
 
 class callistoVisitor(ParseTreeVisitor):
 
-    # Visit a parse tree produced by callistoParser#prog.
-    def visitProg(self, ctx:callistoParser.ProgContext):
+    # Visit a parse tree produced by callistoParser#program.
+    def visitProgram(self, ctx:callistoParser.ProgramContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by callistoParser#printStatement.
-    def visitPrintStatement(self, ctx:callistoParser.PrintStatementContext):
+    # Visit a parse tree produced by callistoParser#system.
+    def visitSystem(self, ctx:callistoParser.SystemContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by callistoParser#functionDeclaration.
-    def visitFunctionDeclaration(self, ctx:callistoParser.FunctionDeclarationContext):
+    # Visit a parse tree produced by callistoParser#planetList.
+    def visitPlanetList(self, ctx:callistoParser.PlanetListContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by callistoParser#variableDeclaration.
-    def visitVariableDeclaration(self, ctx:callistoParser.VariableDeclarationContext):
+    # Visit a parse tree produced by callistoParser#planet.
+    def visitPlanet(self, ctx:callistoParser.PlanetContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by callistoParser#expressionStatement.
-    def visitExpressionStatement(self, ctx:callistoParser.ExpressionStatementContext):
+    # Visit a parse tree produced by callistoParser#moonList.
+    def visitMoonList(self, ctx:callistoParser.MoonListContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by callistoParser#params.
-    def visitParams(self, ctx:callistoParser.ParamsContext):
+    # Visit a parse tree produced by callistoParser#moon.
+    def visitMoon(self, ctx:callistoParser.MoonContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by callistoParser#stringExpr.
-    def visitStringExpr(self, ctx:callistoParser.StringExprContext):
+    # Visit a parse tree produced by callistoParser#star.
+    def visitStar(self, ctx:callistoParser.StarContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by callistoParser#variableExpr.
-    def visitVariableExpr(self, ctx:callistoParser.VariableExprContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by callistoParser#arrayExpr.
-    def visitArrayExpr(self, ctx:callistoParser.ArrayExprContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by callistoParser#addExpr.
-    def visitAddExpr(self, ctx:callistoParser.AddExprContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by callistoParser#numberExpr.
-    def visitNumberExpr(self, ctx:callistoParser.NumberExprContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by callistoParser#functionCallExpr.
-    def visitFunctionCallExpr(self, ctx:callistoParser.FunctionCallExprContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by callistoParser#mulExpr.
-    def visitMulExpr(self, ctx:callistoParser.MulExprContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by callistoParser#divExpr.
-    def visitDivExpr(self, ctx:callistoParser.DivExprContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by callistoParser#parensExpr.
-    def visitParensExpr(self, ctx:callistoParser.ParensExprContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by callistoParser#dictExpr.
-    def visitDictExpr(self, ctx:callistoParser.DictExprContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by callistoParser#subExpr.
-    def visitSubExpr(self, ctx:callistoParser.SubExprContext):
+    # Visit a parse tree produced by callistoParser#orbit.
+    def visitOrbit(self, ctx:callistoParser.OrbitContext):
         return self.visitChildren(ctx)
 
 

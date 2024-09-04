@@ -1,31 +1,40 @@
 grammar callisto;
 
-prog:   (statement)* ;
 
-statement
-    : expr ';'           # printStatement
-    | 'fn' ID '(' params? ')' 'do' statement* 'end'  # functionDeclaration
-    | ID '=' expr ';'   # variableDeclaration
-    | expr ';'          # expressionStatement
+NAME: [a-zA-Z]+;
+NUMBER: [0-9]+ ('.' [0-9]+)?;
+SPECTRAL_TYPE: 'O' | 'B' | 'A' | 'F' | 'G' | 'K' | 'M';
+STRING: '"' (~["\r\n])* '"';
+WS: [ \t\n\r]+ -> skip;
+
+program: system+;
+
+system: 'System' NAME '{' 'centralStar' ':' star ',' 'planets' ':' planetList '}';
+
+centralStar: 'centralStar' ':' star;
+
+planetList: '[' (planet (',' planet)*)? ']';
+
+
+planet
+    : 'Planet' NAME '{' 'diameter' ':' NUMBER ',' 'mass' ':' NUMBER ',' 'temperature' ':' NUMBER ',' 'atmosphere' ':' STRING ',' 'composition' ':' STRING ',' 'orbit' ':' orbit ',' 'moons' ':' moonList '}'
     ;
 
-params: ID (',' ID)* ;
 
-expr
-    : expr '+' expr      # addExpr
-    | expr '-' expr      # subExpr
-    | expr '*' expr      # mulExpr
-    | expr '/' expr      # divExpr
-    | NUMBER             # numberExpr
-    | STRING             # stringExpr
-    | ID                 # variableExpr
-    | '(' expr ')'       # parensExpr
-    | ID '(' (expr (',' expr)*)? ')' # functionCallExpr
-    | '[' (expr (',' expr)*)? ']'  # arrayExpr
-    | '{' (ID ':' expr (',' ID ':' expr)*)? '}'  # dictExpr
+moonList: '[' (moon (',' moon)*)? ']';
+
+
+moon
+    : 'Moon' NAME '{' 'diameter' ':' NUMBER ',' 'orbitPeriod' ':' NUMBER ',' 'density' ':' NUMBER ',' 'surfaceType' ':' STRING '}'
     ;
 
-NUMBER: [0-9]+ ;
-STRING: '"' [a-zA-Z0-9 ]* '"' ;
-ID: [a-zA-Z_] [a-zA-Z_0-9]* ;
-WS: [ \t\r\n]+ -> skip ;
+
+star
+    : 'Star' NAME '{' 'spectralType' ':' SPECTRAL_TYPE ',' 'luminosity' ':' NUMBER ',' 'age' ':' NUMBER ',' 'mass' ':' NUMBER '}'
+    ;
+
+
+orbit
+    : 'Orbit' '{' 'semiMajorAxis' ':' NUMBER ',' 'eccentricity' ':' NUMBER '}'
+    ;
+

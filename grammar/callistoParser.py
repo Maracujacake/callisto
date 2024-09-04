@@ -1,4 +1,4 @@
-# Generated from grammar\callisto.g4 by ANTLR 4.13.0
+# Generated from callisto.g4 by ANTLR 4.13.0
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -10,47 +10,50 @@ else:
 
 def serializedATN():
     return [
-        4,1,21,119,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,1,0,5,0,10,8,0,10,0,12,
-        0,13,9,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,22,8,1,1,1,1,1,1,1,5,1,
-        27,8,1,10,1,12,1,30,9,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,
-        41,8,1,1,2,1,2,1,2,5,2,46,8,2,10,2,12,2,49,9,2,1,3,1,3,1,3,1,3,1,
-        3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,5,3,64,8,3,10,3,12,3,67,9,3,3,
-        3,69,8,3,1,3,1,3,1,3,1,3,1,3,5,3,76,8,3,10,3,12,3,79,9,3,3,3,81,
-        8,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,5,3,92,8,3,10,3,12,3,95,
-        9,3,3,3,97,8,3,1,3,3,3,100,8,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,
-        3,1,3,1,3,1,3,5,3,114,8,3,10,3,12,3,117,9,3,1,3,0,1,6,4,0,2,4,6,
-        0,0,137,0,11,1,0,0,0,2,40,1,0,0,0,4,42,1,0,0,0,6,99,1,0,0,0,8,10,
-        3,2,1,0,9,8,1,0,0,0,10,13,1,0,0,0,11,9,1,0,0,0,11,12,1,0,0,0,12,
-        1,1,0,0,0,13,11,1,0,0,0,14,15,3,6,3,0,15,16,5,1,0,0,16,41,1,0,0,
-        0,17,18,5,2,0,0,18,19,5,20,0,0,19,21,5,3,0,0,20,22,3,4,2,0,21,20,
-        1,0,0,0,21,22,1,0,0,0,22,23,1,0,0,0,23,24,5,4,0,0,24,28,5,5,0,0,
-        25,27,3,2,1,0,26,25,1,0,0,0,27,30,1,0,0,0,28,26,1,0,0,0,28,29,1,
-        0,0,0,29,31,1,0,0,0,30,28,1,0,0,0,31,41,5,6,0,0,32,33,5,20,0,0,33,
-        34,5,7,0,0,34,35,3,6,3,0,35,36,5,1,0,0,36,41,1,0,0,0,37,38,3,6,3,
-        0,38,39,5,1,0,0,39,41,1,0,0,0,40,14,1,0,0,0,40,17,1,0,0,0,40,32,
-        1,0,0,0,40,37,1,0,0,0,41,3,1,0,0,0,42,47,5,20,0,0,43,44,5,8,0,0,
-        44,46,5,20,0,0,45,43,1,0,0,0,46,49,1,0,0,0,47,45,1,0,0,0,47,48,1,
-        0,0,0,48,5,1,0,0,0,49,47,1,0,0,0,50,51,6,3,-1,0,51,100,5,18,0,0,
-        52,100,5,19,0,0,53,100,5,20,0,0,54,55,5,3,0,0,55,56,3,6,3,0,56,57,
-        5,4,0,0,57,100,1,0,0,0,58,59,5,20,0,0,59,68,5,3,0,0,60,65,3,6,3,
-        0,61,62,5,8,0,0,62,64,3,6,3,0,63,61,1,0,0,0,64,67,1,0,0,0,65,63,
-        1,0,0,0,65,66,1,0,0,0,66,69,1,0,0,0,67,65,1,0,0,0,68,60,1,0,0,0,
-        68,69,1,0,0,0,69,70,1,0,0,0,70,100,5,4,0,0,71,80,5,13,0,0,72,77,
-        3,6,3,0,73,74,5,8,0,0,74,76,3,6,3,0,75,73,1,0,0,0,76,79,1,0,0,0,
-        77,75,1,0,0,0,77,78,1,0,0,0,78,81,1,0,0,0,79,77,1,0,0,0,80,72,1,
-        0,0,0,80,81,1,0,0,0,81,82,1,0,0,0,82,100,5,14,0,0,83,96,5,15,0,0,
-        84,85,5,20,0,0,85,86,5,16,0,0,86,93,3,6,3,0,87,88,5,8,0,0,88,89,
-        5,20,0,0,89,90,5,16,0,0,90,92,3,6,3,0,91,87,1,0,0,0,92,95,1,0,0,
-        0,93,91,1,0,0,0,93,94,1,0,0,0,94,97,1,0,0,0,95,93,1,0,0,0,96,84,
-        1,0,0,0,96,97,1,0,0,0,97,98,1,0,0,0,98,100,5,17,0,0,99,50,1,0,0,
-        0,99,52,1,0,0,0,99,53,1,0,0,0,99,54,1,0,0,0,99,58,1,0,0,0,99,71,
-        1,0,0,0,99,83,1,0,0,0,100,115,1,0,0,0,101,102,10,11,0,0,102,103,
-        5,9,0,0,103,114,3,6,3,12,104,105,10,10,0,0,105,106,5,10,0,0,106,
-        114,3,6,3,11,107,108,10,9,0,0,108,109,5,11,0,0,109,114,3,6,3,10,
-        110,111,10,8,0,0,111,112,5,12,0,0,112,114,3,6,3,9,113,101,1,0,0,
-        0,113,104,1,0,0,0,113,107,1,0,0,0,113,110,1,0,0,0,114,117,1,0,0,
-        0,115,113,1,0,0,0,115,116,1,0,0,0,116,7,1,0,0,0,117,115,1,0,0,0,
-        14,11,21,28,40,47,65,68,77,80,93,96,99,113,115
+        4,1,33,149,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        6,2,7,7,7,2,8,7,8,1,0,4,0,20,8,0,11,0,12,0,21,1,1,1,1,1,1,1,1,1,
+        1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,2,1,2,1,2,1,3,1,3,1,3,1,3,5,
+        3,44,8,3,10,3,12,3,47,9,3,3,3,49,8,3,1,3,1,3,1,4,1,4,1,4,1,4,1,4,
+        1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,
+        1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,5,1,5,1,5,1,5,5,5,
+        89,8,5,10,5,12,5,92,9,5,3,5,94,8,5,1,5,1,5,1,6,1,6,1,6,1,6,1,6,1,
+        6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,7,1,
+        7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,
+        7,1,7,1,7,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,0,0,9,
+        0,2,4,6,8,10,12,14,16,0,0,144,0,19,1,0,0,0,2,23,1,0,0,0,4,35,1,0,
+        0,0,6,39,1,0,0,0,8,52,1,0,0,0,10,84,1,0,0,0,12,97,1,0,0,0,14,117,
+        1,0,0,0,16,137,1,0,0,0,18,20,3,2,1,0,19,18,1,0,0,0,20,21,1,0,0,0,
+        21,19,1,0,0,0,21,22,1,0,0,0,22,1,1,0,0,0,23,24,5,1,0,0,24,25,5,29,
+        0,0,25,26,5,2,0,0,26,27,5,3,0,0,27,28,5,4,0,0,28,29,3,14,7,0,29,
+        30,5,5,0,0,30,31,5,6,0,0,31,32,5,4,0,0,32,33,3,6,3,0,33,34,5,7,0,
+        0,34,3,1,0,0,0,35,36,5,3,0,0,36,37,5,4,0,0,37,38,3,14,7,0,38,5,1,
+        0,0,0,39,48,5,8,0,0,40,45,3,8,4,0,41,42,5,5,0,0,42,44,3,8,4,0,43,
+        41,1,0,0,0,44,47,1,0,0,0,45,43,1,0,0,0,45,46,1,0,0,0,46,49,1,0,0,
+        0,47,45,1,0,0,0,48,40,1,0,0,0,48,49,1,0,0,0,49,50,1,0,0,0,50,51,
+        5,9,0,0,51,7,1,0,0,0,52,53,5,10,0,0,53,54,5,29,0,0,54,55,5,2,0,0,
+        55,56,5,11,0,0,56,57,5,4,0,0,57,58,5,30,0,0,58,59,5,5,0,0,59,60,
+        5,12,0,0,60,61,5,4,0,0,61,62,5,30,0,0,62,63,5,5,0,0,63,64,5,13,0,
+        0,64,65,5,4,0,0,65,66,5,30,0,0,66,67,5,5,0,0,67,68,5,14,0,0,68,69,
+        5,4,0,0,69,70,5,32,0,0,70,71,5,5,0,0,71,72,5,15,0,0,72,73,5,4,0,
+        0,73,74,5,32,0,0,74,75,5,5,0,0,75,76,5,16,0,0,76,77,5,4,0,0,77,78,
+        3,16,8,0,78,79,5,5,0,0,79,80,5,17,0,0,80,81,5,4,0,0,81,82,3,10,5,
+        0,82,83,5,7,0,0,83,9,1,0,0,0,84,93,5,8,0,0,85,90,3,12,6,0,86,87,
+        5,5,0,0,87,89,3,12,6,0,88,86,1,0,0,0,89,92,1,0,0,0,90,88,1,0,0,0,
+        90,91,1,0,0,0,91,94,1,0,0,0,92,90,1,0,0,0,93,85,1,0,0,0,93,94,1,
+        0,0,0,94,95,1,0,0,0,95,96,5,9,0,0,96,11,1,0,0,0,97,98,5,18,0,0,98,
+        99,5,29,0,0,99,100,5,2,0,0,100,101,5,11,0,0,101,102,5,4,0,0,102,
+        103,5,30,0,0,103,104,5,5,0,0,104,105,5,19,0,0,105,106,5,4,0,0,106,
+        107,5,30,0,0,107,108,5,5,0,0,108,109,5,20,0,0,109,110,5,4,0,0,110,
+        111,5,30,0,0,111,112,5,5,0,0,112,113,5,21,0,0,113,114,5,4,0,0,114,
+        115,5,32,0,0,115,116,5,7,0,0,116,13,1,0,0,0,117,118,5,22,0,0,118,
+        119,5,29,0,0,119,120,5,2,0,0,120,121,5,23,0,0,121,122,5,4,0,0,122,
+        123,5,31,0,0,123,124,5,5,0,0,124,125,5,24,0,0,125,126,5,4,0,0,126,
+        127,5,30,0,0,127,128,5,5,0,0,128,129,5,25,0,0,129,130,5,4,0,0,130,
+        131,5,30,0,0,131,132,5,5,0,0,132,133,5,12,0,0,133,134,5,4,0,0,134,
+        135,5,30,0,0,135,136,5,7,0,0,136,15,1,0,0,0,137,138,5,26,0,0,138,
+        139,5,2,0,0,139,140,5,27,0,0,140,141,5,4,0,0,141,142,5,30,0,0,142,
+        143,5,5,0,0,143,144,5,28,0,0,144,145,5,4,0,0,145,146,5,30,0,0,146,
+        147,5,7,0,0,147,17,1,0,0,0,5,21,45,48,90,93
     ]
 
 class callistoParser ( Parser ):
@@ -63,23 +66,36 @@ class callistoParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "';'", "'fn'", "'('", "')'", "'do'", "'end'", 
-                     "'='", "','", "'+'", "'-'", "'*'", "'/'", "'['", "']'", 
-                     "'{'", "':'", "'}'" ]
+    literalNames = [ "<INVALID>", "'System'", "'{'", "'centralStar'", "':'", 
+                     "','", "'planets'", "'}'", "'['", "']'", "'Planet'", 
+                     "'diameter'", "'mass'", "'temperature'", "'atmosphere'", 
+                     "'composition'", "'orbit'", "'moons'", "'Moon'", "'orbitPeriod'", 
+                     "'density'", "'surfaceType'", "'Star'", "'spectralType'", 
+                     "'luminosity'", "'age'", "'Orbit'", "'semiMajorAxis'", 
+                     "'eccentricity'" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "NUMBER", "STRING", "ID", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "NAME", "NUMBER", "SPECTRAL_TYPE", "STRING", 
                       "WS" ]
 
-    RULE_prog = 0
-    RULE_statement = 1
-    RULE_params = 2
-    RULE_expr = 3
+    RULE_program = 0
+    RULE_system = 1
+    RULE_centralStar = 2
+    RULE_planetList = 3
+    RULE_planet = 4
+    RULE_moonList = 5
+    RULE_moon = 6
+    RULE_star = 7
+    RULE_orbit = 8
 
-    ruleNames =  [ "prog", "statement", "params", "expr" ]
+    ruleNames =  [ "program", "system", "centralStar", "planetList", "planet", 
+                   "moonList", "moon", "star", "orbit" ]
 
     EOF = Token.EOF
     T__0=1
@@ -99,10 +115,22 @@ class callistoParser ( Parser ):
     T__14=15
     T__15=16
     T__16=17
-    NUMBER=18
-    STRING=19
-    ID=20
-    WS=21
+    T__17=18
+    T__18=19
+    T__19=20
+    T__20=21
+    T__21=22
+    T__22=23
+    T__23=24
+    T__24=25
+    T__25=26
+    T__26=27
+    T__27=28
+    NAME=29
+    NUMBER=30
+    SPECTRAL_TYPE=31
+    STRING=32
+    WS=33
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -113,48 +141,52 @@ class callistoParser ( Parser ):
 
 
 
-    class ProgContext(ParserRuleContext):
+    class ProgramContext(ParserRuleContext):
         __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def statement(self, i:int=None):
+        def system(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(callistoParser.StatementContext)
+                return self.getTypedRuleContexts(callistoParser.SystemContext)
             else:
-                return self.getTypedRuleContext(callistoParser.StatementContext,i)
+                return self.getTypedRuleContext(callistoParser.SystemContext,i)
 
 
         def getRuleIndex(self):
-            return callistoParser.RULE_prog
+            return callistoParser.RULE_program
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitProg" ):
-                return visitor.visitProg(self)
-            else:
-                return visitor.visitChildren(self)
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterProgram" ):
+                listener.enterProgram(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitProgram" ):
+                listener.exitProgram(self)
 
 
 
 
-    def prog(self):
+    def program(self):
 
-        localctx = callistoParser.ProgContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 0, self.RULE_prog)
+        localctx = callistoParser.ProgramContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 0, self.RULE_program)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 11
+            self.state = 19 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 1875980) != 0):
-                self.state = 8
-                self.statement()
-                self.state = 13
+            while True:
+                self.state = 18
+                self.system()
+                self.state = 21 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
+                if not (_la==1):
+                    break
 
         except RecognitionException as re:
             localctx.exception = re
@@ -165,178 +197,180 @@ class callistoParser ( Parser ):
         return localctx
 
 
-    class StatementContext(ParserRuleContext):
+    class SystemContext(ParserRuleContext):
         __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
+        def NAME(self):
+            return self.getToken(callistoParser.NAME, 0)
+
+        def star(self):
+            return self.getTypedRuleContext(callistoParser.StarContext,0)
+
+
+        def planetList(self):
+            return self.getTypedRuleContext(callistoParser.PlanetListContext,0)
+
 
         def getRuleIndex(self):
-            return callistoParser.RULE_statement
+            return callistoParser.RULE_system
 
-     
-        def copyFrom(self, ctx:ParserRuleContext):
-            super().copyFrom(ctx)
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterSystem" ):
+                listener.enterSystem(self)
 
-
-
-    class PrintStatementContext(StatementContext):
-
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a callistoParser.StatementContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
-
-        def expr(self):
-            return self.getTypedRuleContext(callistoParser.ExprContext,0)
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitSystem" ):
+                listener.exitSystem(self)
 
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitPrintStatement" ):
-                return visitor.visitPrintStatement(self)
-            else:
-                return visitor.visitChildren(self)
 
 
-    class ExpressionStatementContext(StatementContext):
+    def system(self):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a callistoParser.StatementContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
+        localctx = callistoParser.SystemContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 2, self.RULE_system)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 23
+            self.match(callistoParser.T__0)
+            self.state = 24
+            self.match(callistoParser.NAME)
+            self.state = 25
+            self.match(callistoParser.T__1)
+            self.state = 26
+            self.match(callistoParser.T__2)
+            self.state = 27
+            self.match(callistoParser.T__3)
+            self.state = 28
+            self.star()
+            self.state = 29
+            self.match(callistoParser.T__4)
+            self.state = 30
+            self.match(callistoParser.T__5)
+            self.state = 31
+            self.match(callistoParser.T__3)
+            self.state = 32
+            self.planetList()
+            self.state = 33
+            self.match(callistoParser.T__6)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
 
-        def expr(self):
-            return self.getTypedRuleContext(callistoParser.ExprContext,0)
+
+    class CentralStarContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def star(self):
+            return self.getTypedRuleContext(callistoParser.StarContext,0)
 
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitExpressionStatement" ):
-                return visitor.visitExpressionStatement(self)
-            else:
-                return visitor.visitChildren(self)
+        def getRuleIndex(self):
+            return callistoParser.RULE_centralStar
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterCentralStar" ):
+                listener.enterCentralStar(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitCentralStar" ):
+                listener.exitCentralStar(self)
 
 
-    class FunctionDeclarationContext(StatementContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a callistoParser.StatementContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
 
-        def ID(self):
-            return self.getToken(callistoParser.ID, 0)
-        def params(self):
-            return self.getTypedRuleContext(callistoParser.ParamsContext,0)
+    def centralStar(self):
 
-        def statement(self, i:int=None):
+        localctx = callistoParser.CentralStarContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 4, self.RULE_centralStar)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 35
+            self.match(callistoParser.T__2)
+            self.state = 36
+            self.match(callistoParser.T__3)
+            self.state = 37
+            self.star()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class PlanetListContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def planet(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(callistoParser.StatementContext)
+                return self.getTypedRuleContexts(callistoParser.PlanetContext)
             else:
-                return self.getTypedRuleContext(callistoParser.StatementContext,i)
+                return self.getTypedRuleContext(callistoParser.PlanetContext,i)
 
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFunctionDeclaration" ):
-                return visitor.visitFunctionDeclaration(self)
-            else:
-                return visitor.visitChildren(self)
+        def getRuleIndex(self):
+            return callistoParser.RULE_planetList
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterPlanetList" ):
+                listener.enterPlanetList(self)
 
-    class VariableDeclarationContext(StatementContext):
-
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a callistoParser.StatementContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
-
-        def ID(self):
-            return self.getToken(callistoParser.ID, 0)
-        def expr(self):
-            return self.getTypedRuleContext(callistoParser.ExprContext,0)
-
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitVariableDeclaration" ):
-                return visitor.visitVariableDeclaration(self)
-            else:
-                return visitor.visitChildren(self)
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitPlanetList" ):
+                listener.exitPlanetList(self)
 
 
 
-    def statement(self):
 
-        localctx = callistoParser.StatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 2, self.RULE_statement)
+    def planetList(self):
+
+        localctx = callistoParser.PlanetListContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 6, self.RULE_planetList)
         self._la = 0 # Token type
         try:
-            self.state = 40
+            self.enterOuterAlt(localctx, 1)
+            self.state = 39
+            self.match(callistoParser.T__7)
+            self.state = 48
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,3,self._ctx)
-            if la_ == 1:
-                localctx = callistoParser.PrintStatementContext(self, localctx)
-                self.enterOuterAlt(localctx, 1)
-                self.state = 14
-                self.expr(0)
-                self.state = 15
-                self.match(callistoParser.T__0)
-                pass
-
-            elif la_ == 2:
-                localctx = callistoParser.FunctionDeclarationContext(self, localctx)
-                self.enterOuterAlt(localctx, 2)
-                self.state = 17
-                self.match(callistoParser.T__1)
-                self.state = 18
-                self.match(callistoParser.ID)
-                self.state = 19
-                self.match(callistoParser.T__2)
-                self.state = 21
+            _la = self._input.LA(1)
+            if _la==10:
+                self.state = 40
+                self.planet()
+                self.state = 45
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if _la==20:
-                    self.state = 20
-                    self.params()
-
-
-                self.state = 23
-                self.match(callistoParser.T__3)
-                self.state = 24
-                self.match(callistoParser.T__4)
-                self.state = 28
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                while (((_la) & ~0x3f) == 0 and ((1 << _la) & 1875980) != 0):
-                    self.state = 25
-                    self.statement()
-                    self.state = 30
+                while _la==5:
+                    self.state = 41
+                    self.match(callistoParser.T__4)
+                    self.state = 42
+                    self.planet()
+                    self.state = 47
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
 
-                self.state = 31
-                self.match(callistoParser.T__5)
-                pass
-
-            elif la_ == 3:
-                localctx = callistoParser.VariableDeclarationContext(self, localctx)
-                self.enterOuterAlt(localctx, 3)
-                self.state = 32
-                self.match(callistoParser.ID)
-                self.state = 33
-                self.match(callistoParser.T__6)
-                self.state = 34
-                self.expr(0)
-                self.state = 35
-                self.match(callistoParser.T__0)
-                pass
-
-            elif la_ == 4:
-                localctx = callistoParser.ExpressionStatementContext(self, localctx)
-                self.enterOuterAlt(localctx, 4)
-                self.state = 37
-                self.expr(0)
-                self.state = 38
-                self.match(callistoParser.T__0)
-                pass
 
 
+            self.state = 50
+            self.match(callistoParser.T__8)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -346,52 +380,186 @@ class callistoParser ( Parser ):
         return localctx
 
 
-    class ParamsContext(ParserRuleContext):
+    class PlanetContext(ParserRuleContext):
         __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def ID(self, i:int=None):
+        def NAME(self):
+            return self.getToken(callistoParser.NAME, 0)
+
+        def NUMBER(self, i:int=None):
             if i is None:
-                return self.getTokens(callistoParser.ID)
+                return self.getTokens(callistoParser.NUMBER)
             else:
-                return self.getToken(callistoParser.ID, i)
+                return self.getToken(callistoParser.NUMBER, i)
+
+        def STRING(self, i:int=None):
+            if i is None:
+                return self.getTokens(callistoParser.STRING)
+            else:
+                return self.getToken(callistoParser.STRING, i)
+
+        def orbit(self):
+            return self.getTypedRuleContext(callistoParser.OrbitContext,0)
+
+
+        def moonList(self):
+            return self.getTypedRuleContext(callistoParser.MoonListContext,0)
+
 
         def getRuleIndex(self):
-            return callistoParser.RULE_params
+            return callistoParser.RULE_planet
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitParams" ):
-                return visitor.visitParams(self)
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterPlanet" ):
+                listener.enterPlanet(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitPlanet" ):
+                listener.exitPlanet(self)
+
+
+
+
+    def planet(self):
+
+        localctx = callistoParser.PlanetContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 8, self.RULE_planet)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 52
+            self.match(callistoParser.T__9)
+            self.state = 53
+            self.match(callistoParser.NAME)
+            self.state = 54
+            self.match(callistoParser.T__1)
+            self.state = 55
+            self.match(callistoParser.T__10)
+            self.state = 56
+            self.match(callistoParser.T__3)
+            self.state = 57
+            self.match(callistoParser.NUMBER)
+            self.state = 58
+            self.match(callistoParser.T__4)
+            self.state = 59
+            self.match(callistoParser.T__11)
+            self.state = 60
+            self.match(callistoParser.T__3)
+            self.state = 61
+            self.match(callistoParser.NUMBER)
+            self.state = 62
+            self.match(callistoParser.T__4)
+            self.state = 63
+            self.match(callistoParser.T__12)
+            self.state = 64
+            self.match(callistoParser.T__3)
+            self.state = 65
+            self.match(callistoParser.NUMBER)
+            self.state = 66
+            self.match(callistoParser.T__4)
+            self.state = 67
+            self.match(callistoParser.T__13)
+            self.state = 68
+            self.match(callistoParser.T__3)
+            self.state = 69
+            self.match(callistoParser.STRING)
+            self.state = 70
+            self.match(callistoParser.T__4)
+            self.state = 71
+            self.match(callistoParser.T__14)
+            self.state = 72
+            self.match(callistoParser.T__3)
+            self.state = 73
+            self.match(callistoParser.STRING)
+            self.state = 74
+            self.match(callistoParser.T__4)
+            self.state = 75
+            self.match(callistoParser.T__15)
+            self.state = 76
+            self.match(callistoParser.T__3)
+            self.state = 77
+            self.orbit()
+            self.state = 78
+            self.match(callistoParser.T__4)
+            self.state = 79
+            self.match(callistoParser.T__16)
+            self.state = 80
+            self.match(callistoParser.T__3)
+            self.state = 81
+            self.moonList()
+            self.state = 82
+            self.match(callistoParser.T__6)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class MoonListContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def moon(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(callistoParser.MoonContext)
             else:
-                return visitor.visitChildren(self)
+                return self.getTypedRuleContext(callistoParser.MoonContext,i)
+
+
+        def getRuleIndex(self):
+            return callistoParser.RULE_moonList
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterMoonList" ):
+                listener.enterMoonList(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitMoonList" ):
+                listener.exitMoonList(self)
 
 
 
 
-    def params(self):
+    def moonList(self):
 
-        localctx = callistoParser.ParamsContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 4, self.RULE_params)
+        localctx = callistoParser.MoonListContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 10, self.RULE_moonList)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 42
-            self.match(callistoParser.ID)
-            self.state = 47
+            self.state = 84
+            self.match(callistoParser.T__7)
+            self.state = 93
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==8:
-                self.state = 43
-                self.match(callistoParser.T__7)
-                self.state = 44
-                self.match(callistoParser.ID)
-                self.state = 49
+            if _la==18:
+                self.state = 85
+                self.moon()
+                self.state = 90
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
+                while _la==5:
+                    self.state = 86
+                    self.match(callistoParser.T__4)
+                    self.state = 87
+                    self.moon()
+                    self.state = 92
+                    self._errHandler.sync(self)
+                    _la = self._input.LA(1)
 
+
+
+            self.state = 95
+            self.match(callistoParser.T__8)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -401,491 +569,239 @@ class callistoParser ( Parser ):
         return localctx
 
 
-    class ExprContext(ParserRuleContext):
+    class MoonContext(ParserRuleContext):
         __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
+        def NAME(self):
+            return self.getToken(callistoParser.NAME, 0)
 
-        def getRuleIndex(self):
-            return callistoParser.RULE_expr
-
-     
-        def copyFrom(self, ctx:ParserRuleContext):
-            super().copyFrom(ctx)
-
-
-    class StringExprContext(ExprContext):
-
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a callistoParser.ExprContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
+        def NUMBER(self, i:int=None):
+            if i is None:
+                return self.getTokens(callistoParser.NUMBER)
+            else:
+                return self.getToken(callistoParser.NUMBER, i)
 
         def STRING(self):
             return self.getToken(callistoParser.STRING, 0)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitStringExpr" ):
-                return visitor.visitStringExpr(self)
-            else:
-                return visitor.visitChildren(self)
+        def getRuleIndex(self):
+            return callistoParser.RULE_moon
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterMoon" ):
+                listener.enterMoon(self)
 
-    class VariableExprContext(ExprContext):
-
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a callistoParser.ExprContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
-
-        def ID(self):
-            return self.getToken(callistoParser.ID, 0)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitVariableExpr" ):
-                return visitor.visitVariableExpr(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-    class ArrayExprContext(ExprContext):
-
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a callistoParser.ExprContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
-
-        def expr(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(callistoParser.ExprContext)
-            else:
-                return self.getTypedRuleContext(callistoParser.ExprContext,i)
-
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitArrayExpr" ):
-                return visitor.visitArrayExpr(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-    class AddExprContext(ExprContext):
-
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a callistoParser.ExprContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
-
-        def expr(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(callistoParser.ExprContext)
-            else:
-                return self.getTypedRuleContext(callistoParser.ExprContext,i)
-
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAddExpr" ):
-                return visitor.visitAddExpr(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-    class NumberExprContext(ExprContext):
-
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a callistoParser.ExprContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
-
-        def NUMBER(self):
-            return self.getToken(callistoParser.NUMBER, 0)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitNumberExpr" ):
-                return visitor.visitNumberExpr(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-    class FunctionCallExprContext(ExprContext):
-
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a callistoParser.ExprContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
-
-        def ID(self):
-            return self.getToken(callistoParser.ID, 0)
-        def expr(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(callistoParser.ExprContext)
-            else:
-                return self.getTypedRuleContext(callistoParser.ExprContext,i)
-
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFunctionCallExpr" ):
-                return visitor.visitFunctionCallExpr(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-    class MulExprContext(ExprContext):
-
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a callistoParser.ExprContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
-
-        def expr(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(callistoParser.ExprContext)
-            else:
-                return self.getTypedRuleContext(callistoParser.ExprContext,i)
-
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitMulExpr" ):
-                return visitor.visitMulExpr(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-    class DivExprContext(ExprContext):
-
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a callistoParser.ExprContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
-
-        def expr(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(callistoParser.ExprContext)
-            else:
-                return self.getTypedRuleContext(callistoParser.ExprContext,i)
-
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDivExpr" ):
-                return visitor.visitDivExpr(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-    class ParensExprContext(ExprContext):
-
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a callistoParser.ExprContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
-
-        def expr(self):
-            return self.getTypedRuleContext(callistoParser.ExprContext,0)
-
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitParensExpr" ):
-                return visitor.visitParensExpr(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-    class DictExprContext(ExprContext):
-
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a callistoParser.ExprContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
-
-        def ID(self, i:int=None):
-            if i is None:
-                return self.getTokens(callistoParser.ID)
-            else:
-                return self.getToken(callistoParser.ID, i)
-        def expr(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(callistoParser.ExprContext)
-            else:
-                return self.getTypedRuleContext(callistoParser.ExprContext,i)
-
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDictExpr" ):
-                return visitor.visitDictExpr(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-    class SubExprContext(ExprContext):
-
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a callistoParser.ExprContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
-
-        def expr(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(callistoParser.ExprContext)
-            else:
-                return self.getTypedRuleContext(callistoParser.ExprContext,i)
-
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitSubExpr" ):
-                return visitor.visitSubExpr(self)
-            else:
-                return visitor.visitChildren(self)
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitMoon" ):
+                listener.exitMoon(self)
 
 
 
-    def expr(self, _p:int=0):
-        _parentctx = self._ctx
-        _parentState = self.state
-        localctx = callistoParser.ExprContext(self, self._ctx, _parentState)
-        _prevctx = localctx
-        _startState = 6
-        self.enterRecursionRule(localctx, 6, self.RULE_expr, _p)
-        self._la = 0 # Token type
+
+    def moon(self):
+
+        localctx = callistoParser.MoonContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 12, self.RULE_moon)
         try:
             self.enterOuterAlt(localctx, 1)
+            self.state = 97
+            self.match(callistoParser.T__17)
+            self.state = 98
+            self.match(callistoParser.NAME)
             self.state = 99
-            self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,11,self._ctx)
-            if la_ == 1:
-                localctx = callistoParser.NumberExprContext(self, localctx)
-                self._ctx = localctx
-                _prevctx = localctx
-
-                self.state = 51
-                self.match(callistoParser.NUMBER)
-                pass
-
-            elif la_ == 2:
-                localctx = callistoParser.StringExprContext(self, localctx)
-                self._ctx = localctx
-                _prevctx = localctx
-                self.state = 52
-                self.match(callistoParser.STRING)
-                pass
-
-            elif la_ == 3:
-                localctx = callistoParser.VariableExprContext(self, localctx)
-                self._ctx = localctx
-                _prevctx = localctx
-                self.state = 53
-                self.match(callistoParser.ID)
-                pass
-
-            elif la_ == 4:
-                localctx = callistoParser.ParensExprContext(self, localctx)
-                self._ctx = localctx
-                _prevctx = localctx
-                self.state = 54
-                self.match(callistoParser.T__2)
-                self.state = 55
-                self.expr(0)
-                self.state = 56
-                self.match(callistoParser.T__3)
-                pass
-
-            elif la_ == 5:
-                localctx = callistoParser.FunctionCallExprContext(self, localctx)
-                self._ctx = localctx
-                _prevctx = localctx
-                self.state = 58
-                self.match(callistoParser.ID)
-                self.state = 59
-                self.match(callistoParser.T__2)
-                self.state = 68
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                if (((_la) & ~0x3f) == 0 and ((1 << _la) & 1875976) != 0):
-                    self.state = 60
-                    self.expr(0)
-                    self.state = 65
-                    self._errHandler.sync(self)
-                    _la = self._input.LA(1)
-                    while _la==8:
-                        self.state = 61
-                        self.match(callistoParser.T__7)
-                        self.state = 62
-                        self.expr(0)
-                        self.state = 67
-                        self._errHandler.sync(self)
-                        _la = self._input.LA(1)
-
-
-
-                self.state = 70
-                self.match(callistoParser.T__3)
-                pass
-
-            elif la_ == 6:
-                localctx = callistoParser.ArrayExprContext(self, localctx)
-                self._ctx = localctx
-                _prevctx = localctx
-                self.state = 71
-                self.match(callistoParser.T__12)
-                self.state = 80
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                if (((_la) & ~0x3f) == 0 and ((1 << _la) & 1875976) != 0):
-                    self.state = 72
-                    self.expr(0)
-                    self.state = 77
-                    self._errHandler.sync(self)
-                    _la = self._input.LA(1)
-                    while _la==8:
-                        self.state = 73
-                        self.match(callistoParser.T__7)
-                        self.state = 74
-                        self.expr(0)
-                        self.state = 79
-                        self._errHandler.sync(self)
-                        _la = self._input.LA(1)
-
-
-
-                self.state = 82
-                self.match(callistoParser.T__13)
-                pass
-
-            elif la_ == 7:
-                localctx = callistoParser.DictExprContext(self, localctx)
-                self._ctx = localctx
-                _prevctx = localctx
-                self.state = 83
-                self.match(callistoParser.T__14)
-                self.state = 96
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                if _la==20:
-                    self.state = 84
-                    self.match(callistoParser.ID)
-                    self.state = 85
-                    self.match(callistoParser.T__15)
-                    self.state = 86
-                    self.expr(0)
-                    self.state = 93
-                    self._errHandler.sync(self)
-                    _la = self._input.LA(1)
-                    while _la==8:
-                        self.state = 87
-                        self.match(callistoParser.T__7)
-                        self.state = 88
-                        self.match(callistoParser.ID)
-                        self.state = 89
-                        self.match(callistoParser.T__15)
-                        self.state = 90
-                        self.expr(0)
-                        self.state = 95
-                        self._errHandler.sync(self)
-                        _la = self._input.LA(1)
-
-
-
-                self.state = 98
-                self.match(callistoParser.T__16)
-                pass
-
-
-            self._ctx.stop = self._input.LT(-1)
+            self.match(callistoParser.T__1)
+            self.state = 100
+            self.match(callistoParser.T__10)
+            self.state = 101
+            self.match(callistoParser.T__3)
+            self.state = 102
+            self.match(callistoParser.NUMBER)
+            self.state = 103
+            self.match(callistoParser.T__4)
+            self.state = 104
+            self.match(callistoParser.T__18)
+            self.state = 105
+            self.match(callistoParser.T__3)
+            self.state = 106
+            self.match(callistoParser.NUMBER)
+            self.state = 107
+            self.match(callistoParser.T__4)
+            self.state = 108
+            self.match(callistoParser.T__19)
+            self.state = 109
+            self.match(callistoParser.T__3)
+            self.state = 110
+            self.match(callistoParser.NUMBER)
+            self.state = 111
+            self.match(callistoParser.T__4)
+            self.state = 112
+            self.match(callistoParser.T__20)
+            self.state = 113
+            self.match(callistoParser.T__3)
+            self.state = 114
+            self.match(callistoParser.STRING)
             self.state = 115
-            self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,13,self._ctx)
-            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
-                if _alt==1:
-                    if self._parseListeners is not None:
-                        self.triggerExitRuleEvent()
-                    _prevctx = localctx
-                    self.state = 113
-                    self._errHandler.sync(self)
-                    la_ = self._interp.adaptivePredict(self._input,12,self._ctx)
-                    if la_ == 1:
-                        localctx = callistoParser.AddExprContext(self, callistoParser.ExprContext(self, _parentctx, _parentState))
-                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                        self.state = 101
-                        if not self.precpred(self._ctx, 11):
-                            from antlr4.error.Errors import FailedPredicateException
-                            raise FailedPredicateException(self, "self.precpred(self._ctx, 11)")
-                        self.state = 102
-                        self.match(callistoParser.T__8)
-                        self.state = 103
-                        self.expr(12)
-                        pass
-
-                    elif la_ == 2:
-                        localctx = callistoParser.SubExprContext(self, callistoParser.ExprContext(self, _parentctx, _parentState))
-                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                        self.state = 104
-                        if not self.precpred(self._ctx, 10):
-                            from antlr4.error.Errors import FailedPredicateException
-                            raise FailedPredicateException(self, "self.precpred(self._ctx, 10)")
-                        self.state = 105
-                        self.match(callistoParser.T__9)
-                        self.state = 106
-                        self.expr(11)
-                        pass
-
-                    elif la_ == 3:
-                        localctx = callistoParser.MulExprContext(self, callistoParser.ExprContext(self, _parentctx, _parentState))
-                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                        self.state = 107
-                        if not self.precpred(self._ctx, 9):
-                            from antlr4.error.Errors import FailedPredicateException
-                            raise FailedPredicateException(self, "self.precpred(self._ctx, 9)")
-                        self.state = 108
-                        self.match(callistoParser.T__10)
-                        self.state = 109
-                        self.expr(10)
-                        pass
-
-                    elif la_ == 4:
-                        localctx = callistoParser.DivExprContext(self, callistoParser.ExprContext(self, _parentctx, _parentState))
-                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                        self.state = 110
-                        if not self.precpred(self._ctx, 8):
-                            from antlr4.error.Errors import FailedPredicateException
-                            raise FailedPredicateException(self, "self.precpred(self._ctx, 8)")
-                        self.state = 111
-                        self.match(callistoParser.T__11)
-                        self.state = 112
-                        self.expr(9)
-                        pass
-
-             
-                self.state = 117
-                self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,13,self._ctx)
-
+            self.match(callistoParser.T__6)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
             self._errHandler.recover(self, re)
         finally:
-            self.unrollRecursionContexts(_parentctx)
+            self.exitRule()
         return localctx
 
 
+    class StarContext(ParserRuleContext):
+        __slots__ = 'parser'
 
-    def sempred(self, localctx:RuleContext, ruleIndex:int, predIndex:int):
-        if self._predicates == None:
-            self._predicates = dict()
-        self._predicates[3] = self.expr_sempred
-        pred = self._predicates.get(ruleIndex, None)
-        if pred is None:
-            raise Exception("No predicate with index:" + str(ruleIndex))
-        else:
-            return pred(localctx, predIndex)
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
 
-    def expr_sempred(self, localctx:ExprContext, predIndex:int):
-            if predIndex == 0:
-                return self.precpred(self._ctx, 11)
-         
+        def NAME(self):
+            return self.getToken(callistoParser.NAME, 0)
 
-            if predIndex == 1:
-                return self.precpred(self._ctx, 10)
-         
+        def SPECTRAL_TYPE(self):
+            return self.getToken(callistoParser.SPECTRAL_TYPE, 0)
 
-            if predIndex == 2:
-                return self.precpred(self._ctx, 9)
-         
+        def NUMBER(self, i:int=None):
+            if i is None:
+                return self.getTokens(callistoParser.NUMBER)
+            else:
+                return self.getToken(callistoParser.NUMBER, i)
 
-            if predIndex == 3:
-                return self.precpred(self._ctx, 8)
-         
+        def getRuleIndex(self):
+            return callistoParser.RULE_star
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterStar" ):
+                listener.enterStar(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitStar" ):
+                listener.exitStar(self)
+
+
+
+
+    def star(self):
+
+        localctx = callistoParser.StarContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 14, self.RULE_star)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 117
+            self.match(callistoParser.T__21)
+            self.state = 118
+            self.match(callistoParser.NAME)
+            self.state = 119
+            self.match(callistoParser.T__1)
+            self.state = 120
+            self.match(callistoParser.T__22)
+            self.state = 121
+            self.match(callistoParser.T__3)
+            self.state = 122
+            self.match(callistoParser.SPECTRAL_TYPE)
+            self.state = 123
+            self.match(callistoParser.T__4)
+            self.state = 124
+            self.match(callistoParser.T__23)
+            self.state = 125
+            self.match(callistoParser.T__3)
+            self.state = 126
+            self.match(callistoParser.NUMBER)
+            self.state = 127
+            self.match(callistoParser.T__4)
+            self.state = 128
+            self.match(callistoParser.T__24)
+            self.state = 129
+            self.match(callistoParser.T__3)
+            self.state = 130
+            self.match(callistoParser.NUMBER)
+            self.state = 131
+            self.match(callistoParser.T__4)
+            self.state = 132
+            self.match(callistoParser.T__11)
+            self.state = 133
+            self.match(callistoParser.T__3)
+            self.state = 134
+            self.match(callistoParser.NUMBER)
+            self.state = 135
+            self.match(callistoParser.T__6)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class OrbitContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def NUMBER(self, i:int=None):
+            if i is None:
+                return self.getTokens(callistoParser.NUMBER)
+            else:
+                return self.getToken(callistoParser.NUMBER, i)
+
+        def getRuleIndex(self):
+            return callistoParser.RULE_orbit
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterOrbit" ):
+                listener.enterOrbit(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitOrbit" ):
+                listener.exitOrbit(self)
+
+
+
+
+    def orbit(self):
+
+        localctx = callistoParser.OrbitContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 16, self.RULE_orbit)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 137
+            self.match(callistoParser.T__25)
+            self.state = 138
+            self.match(callistoParser.T__1)
+            self.state = 139
+            self.match(callistoParser.T__26)
+            self.state = 140
+            self.match(callistoParser.T__3)
+            self.state = 141
+            self.match(callistoParser.NUMBER)
+            self.state = 142
+            self.match(callistoParser.T__4)
+            self.state = 143
+            self.match(callistoParser.T__27)
+            self.state = 144
+            self.match(callistoParser.T__3)
+            self.state = 145
+            self.match(callistoParser.NUMBER)
+            self.state = 146
+            self.match(callistoParser.T__6)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
 
 
 

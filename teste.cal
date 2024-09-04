@@ -1,0 +1,54 @@
+System centralStar {
+    centralStar: star Sun {
+        spectralType: G,
+        luminosity: 1.0,
+        age: 4.6,
+        mass: 1.0
+    },
+    planets: [
+        planet Earth {
+            diameter: 12742,
+            mass: 5.97,
+            temperature: 288,
+            atmosphere: "Nitrogen, Oxygen",
+            composition: "Iron, Oxygen, Silicon",
+            orbit: Orbit {
+                semiMajorAxis: 1.0,
+                eccentricity: 0.0167
+            },
+            moons: [
+                Moon Moon {
+                    diameter: 3474,
+                    orbitPeriod: 27.3,
+                    density: 3.34,
+                    surfaceType: "Regolith"
+                }
+            ]
+        },
+        planet Mars {
+            diameter: 6779,
+            mass: 0.642,
+            temperature: 210,
+            atmosphere: "Carbon Dioxide",
+            composition: "Iron Oxide, Silicon Dioxide",
+            orbit: Orbit {
+                semiMajorAxis: 1.524,
+                eccentricity: 0.0935
+            },
+            moons: [
+                Moon Phobos {
+                    diameter: 22.4,
+                    orbitPeriod: 0.319,
+                    density: 1.876,
+                    surfaceType: "Regolith"
+                },
+                Moon Deimos {
+                    diameter: 12.4,
+                    orbitPeriod: 1.263,
+                    density: 1.471,
+                    surfaceType: "Regolith"
+                }
+            ]
+        }
+    ]
+}
