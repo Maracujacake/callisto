@@ -26,15 +26,6 @@ class callistoListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by callistoParser#centralStar.
-    def enterCentralStar(self, ctx:callistoParser.CentralStarContext):
-        pass
-
-    # Exit a parse tree produced by callistoParser#centralStar.
-    def exitCentralStar(self, ctx:callistoParser.CentralStarContext):
-        pass
-
-
     # Enter a parse tree produced by callistoParser#planetList.
     def enterPlanetList(self, ctx:callistoParser.PlanetListContext):
         pass

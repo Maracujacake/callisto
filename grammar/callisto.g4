@@ -1,40 +1,39 @@
 grammar callisto;
 
+SYSTEM: 'System';
+STAR: 'Star';
+PLANET: 'Planet';
+MOON: 'Moon';
+ORBIT: 'Orbit';
+CENTRALSTAR: 'centralStar';
+PLANETS: 'planets';
 
-NAME: [a-zA-Z]+;
-NUMBER: [0-9]+ ('.' [0-9]+)?;
 SPECTRAL_TYPE: 'O' | 'B' | 'A' | 'F' | 'G' | 'K' | 'M';
-STRING: '"' (~["\r\n])* '"';
-WS: [ \t\n\r]+ -> skip;
+NAME: ('a'..'z'|'A'..'Z')+;
+NUMBER: ('0'..'9')+ ('.' ('0'..'9')+)?;
+STRING: '"' ( ~('"' | '\r' | '\n') )* '"';
+WS: (  '\n' | '\r' | '\t' )+ -> skip;
 
-program: system+;
+program: system+ EOF;
 
-system: 'System' NAME '{' 'centralStar' ':' star ',' 'planets' ':' planetList '}';
-
-centralStar: 'centralStar' ':' star;
+system: SYSTEM NAME '{' 'centralStar' ':' star ',' 'planets' ':' planetList '}';
 
 planetList: '[' (planet (',' planet)*)? ']';
 
-
 planet
-    : 'Planet' NAME '{' 'diameter' ':' NUMBER ',' 'mass' ':' NUMBER ',' 'temperature' ':' NUMBER ',' 'atmosphere' ':' STRING ',' 'composition' ':' STRING ',' 'orbit' ':' orbit ',' 'moons' ':' moonList '}'
+    : PLANET NAME '{' 'diameter' ':' NUMBER ',' 'mass' ':' NUMBER ',' 'temperature' ':' NUMBER ',' 'atmosphere' ':' STRING ',' 'composition' ':' STRING ',' 'orbit' ':' orbit ',' 'moons' ':' moonList '}'
     ;
-
 
 moonList: '[' (moon (',' moon)*)? ']';
 
-
 moon
-    : 'Moon' NAME '{' 'diameter' ':' NUMBER ',' 'orbitPeriod' ':' NUMBER ',' 'density' ':' NUMBER ',' 'surfaceType' ':' STRING '}'
+    : MOON NAME '{' 'diameter' ':' NUMBER ',' 'orbitPeriod' ':' NUMBER ',' 'density' ':' NUMBER ',' 'surfaceType' ':' STRING '}'
     ;
-
 
 star
-    : 'Star' NAME '{' 'spectralType' ':' SPECTRAL_TYPE ',' 'luminosity' ':' NUMBER ',' 'age' ':' NUMBER ',' 'mass' ':' NUMBER '}'
+    : STAR NAME '{' 'spectralType' ':' SPECTRAL_TYPE ',' 'luminosity' ':' NUMBER ',' 'age' ':' NUMBER ',' 'mass' ':' NUMBER '}'
     ;
-
 
 orbit
-    : 'Orbit' '{' 'semiMajorAxis' ':' NUMBER ',' 'eccentricity' ':' NUMBER '}'
+    : ORBIT '{' 'semiMajorAxis' ':' NUMBER ',' 'eccentricity' ':' NUMBER '}'
     ;
-
