@@ -17,7 +17,9 @@ def generate_tokens(file_name):
     for token in token_stream.tokens:
         token_type = token.type
         if token_type >= 0 and token_type < len(lexer.symbolicNames):
-            token_name = lexer.symbolicNames[token_type]
+            token_name = lexer.literalNames[token_type]
+        elif token_type >= 0 and token_type < len(lexer.ruleNames):
+            token_name = lexer.ruleNames[token_type-1]
         else:
             token_name = "UNKNOWN"
         print(f"Token Type: {token_name}, Token Text: '{token.text}'")

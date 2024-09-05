@@ -11,12 +11,14 @@ PLANETS: 'planets';
 SPECTRAL_TYPE: 'O' | 'B' | 'A' | 'F' | 'G' | 'K' | 'M';
 NAME: ('a'..'z'|'A'..'Z')+;
 NUMBER: ('0'..'9')+ ('.' ('0'..'9')+)?;
-STRING: '"' ( ~('"' | '\r' | '\n') )* '"';
-WS: (  '\n' | '\r' | '\t' )+ -> skip;
+STRING 	: '"' ( ESC_SEQ | ~('\r'|'\n'|'\''|'\\'|'"') )* '"';
+fragment
+ESC_SEQ	: '\\\'';
+WS: ( ' ' | '\n' | '\r' | '\t' )+ -> skip;
 
 program: system+ EOF;
 
-system: SYSTEM NAME '{' 'centralStar' ':' star ',' 'planets' ':' planetList '}';
+system: SYSTEM NAME '{' CENTRALSTAR ':' star ',' PLANETS ':' planetList '}';
 
 planetList: '[' (planet (',' planet)*)? ']';
 

@@ -1,5 +1,5 @@
-System centralStar {
-    centralStar: star Sun {
+System algum {
+    centralStar: Star Sun {
         spectralType: G,
         luminosity: 1.0,
         age: 4.6,
@@ -17,7 +17,7 @@ System centralStar {
                 eccentricity: 0.0167
             },
             moons: [
-                Moon Moon {
+                Moon lua {
                     diameter: 3474,
                     orbitPeriod: 27.3,
                     density: 3.34,
