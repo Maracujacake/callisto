@@ -6,7 +6,7 @@
 <p align=center>A linguagem para catalogação de corpos celestes</p>
 
 <p align=center>
-    <a href=#documentação>Documentação</a> | <a href=#exemplos-de-uso>Exemplos de uso</a> |  <a href=#história>História</a>
+    <a href=#documentação>Documentação</a> | <a href=#exemplos-de-uso>Exemplos de uso</a> |  <a href=#explicação-dos-atributos>Explicação dos atributos</a> |  <a href=#história>História</a>
 </p>
 
 # Documentação
@@ -250,6 +250,38 @@ Resultado gerado:
 ![image](https://github.com/user-attachments/assets/2194b134-7458-4ac6-a9d1-63440279ab6a)
 
 
+
+# Explicação dos atributos
+
+### Planeta 🪐
+- diameter (diâmetro): Refere-se ao comprimento da linha reta que atravessa o centro do planeta, de uma extremidade à outra. É uma medida fundamental para entender o tamanho do planeta.
+- mass (massa): Refere-se à quantidade total de matéria que compõe o planeta. A massa influencia a gravidade do planeta e é crucial para entender sua estrutura interna e dinâmica.
+- temperature (temperatura): Refere-se à temperatura média da superfície do planeta, geralmente medida em Kelvin, Celsius ou Fahrenheit. Isso afeta as condições ambientais e a habitabilidade.
+- atmosphere (atmosfera): Refere-se à composição e estrutura da camada gasosa que envolve o planeta. A atmosfera desempenha um papel crucial na regulação da temperatura e na proteção contra radiação.
+- composition (composição): Descreve os elementos e compostos químicos que formam o planeta, incluindo sua superfície e interior. Pode incluir informações sobre minerais, gases, etc.
+- orbit (órbita): Refere-se ao caminho que o planeta segue ao redor de sua estrela. É definido por parâmetros como semi-eixo maior e excentricidade.
+- moons (luas): Lista das luas que orbitam o planeta. Cada lua tem suas próprias características.
+
+
+### Lua (moon) 🌕
+- diameter (diâmetro): Como nos planetas, refere-se ao tamanho da lua, medido como o comprimento da linha reta que atravessa o centro da lua.
+- orbitPeriod (período orbital): Refere-se ao tempo que a lua leva para completar uma órbita ao redor do planeta.
+- density (densidade): Refere-se à massa da lua dividida pelo seu volume. A densidade pode dar pistas sobre a composição interna da lua.
+- surfaceType (tipo de superfície): Descreve a composição e as características da superfície da lua, como se é rochosa, congelada, etc.
+
+  
+### Estrela (star) ⭐
+- spectralType (tipo espectral): Refere-se à classificação da estrela com base em sua temperatura e características espectrais. Tipos espectrais comuns incluem O, B, A, F, G, K, M.
+- luminosity (luminosidade): Refere-se à quantidade total de energia que a estrela emite por unidade de tempo. Está relacionado ao brilho da estrela.
+- age (idade): Refere-se ao tempo desde a formação da estrela. Isso pode influenciar seu estágio de evolução.
+- mass (massa): Como nos planetas, refere-se à quantidade total de matéria que compõe a estrela, afetando sua gravidade e ciclo de vida.
+
+  
+### Órbita (orbit) 🔂
+- semiMajorAxis (semi-eixo maior): Refere-se à metade do comprimento do eixo mais longo de uma órbita elíptica. É uma medida importante para determinar o tamanho da órbita.
+- eccentricity (excentricidade): Mede o quão elíptica (alongada) é a órbita. Um valor de 0 indica uma órbita circular, enquanto valores mais próximos de 1 indicam uma órbita mais alongada.
+
+
 # História
 
 A catalogação de planetas e corpos celestes por muito tempo se deu, seja com a digitação padronizada porém manual de pesquisadores, utilizando padrões improvisados utilizando
@@ -258,6 +290,11 @@ que permitisse impor controle sobre essa prática. Com essa ideia em mente, crie
 dos mais diversos pesquisadores e impor controle sobre suas anotações e catalogações. 
 
 Sinta-se livre para contribuir com o projeto! :)
+
+
+
+
+Vídeo para explicação dinâmica do repositório: https://youtu.be/oUnYfNucjfU
 
 _Produzido para a disciplina de Construção de compiladores - UFSCAR 2024/1_
 
