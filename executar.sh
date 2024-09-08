@@ -1,4 +1,4 @@
-cd ..
+
 
 python .\SemanticAnalyzer.py '.\testes callisto\teste.cal' 
 python .\SemanticAnalyzer.py '.\testes callisto\teste2.cal' 
