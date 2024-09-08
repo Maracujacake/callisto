@@ -1,0 +1,51 @@
+{
+    "planets": [
+        {
+            "name": "Earth",
+            "diameter": 12742.0,
+            "mass": 5.97,
+            "temperature": 288.0,
+            "atmosphere": "nitrogenio, oxigenio",
+            "composition": "ferro, oxigenio, silicio",
+            "orbit": null
+        },
+        {
+            "name": "Mars",
+            "diameter": 6779.0,
+            "mass": 0.642,
+            "temperature": 210.0,
+            "atmosphere": "carbono",
+            "composition": "carbono, silicio",
+            "orbit": null
+        }
+    ],
+    "stars": [
+        {
+            "name": "Sun",
+            "luminosity": 1.0,
+            "age": 4.6,
+            "mass": 1.0,
+            "spectral_type": "G"
+        }
+    ],
+    "moons": [
+        {
+            "name": "lua",
+            "diameter": 3474.0,
+            "orbital_period": 27.3,
+            "density": 3.34
+        },
+        {
+            "name": "Phobos",
+            "diameter": 22.4,
+            "orbital_period": 0.319,
+            "density": 1.876
+        },
+        {
+            "name": "Deimos",
+            "diameter": 12.4,
+            "orbital_period": 1.263,
+            "density": 1.471
+        }
+    ]
+}

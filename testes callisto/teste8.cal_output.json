@@ -1,0 +1,23 @@
+{
+    "planets": [
+        {
+            "name": "BetaPrime",
+            "diameter": 4500.0,
+            "mass": 0.92,
+            "temperature": -15.0,
+            "atmosphere": "aluminio, hidrogenio",
+            "composition": "ferro, niquel, silicio",
+            "orbit": null
+        }
+    ],
+    "stars": [
+        {
+            "name": "BetaStar",
+            "luminosity": 0.3,
+            "age": 9.7,
+            "mass": 0.6,
+            "spectral_type": "K"
+        }
+    ],
+    "moons": []
+}

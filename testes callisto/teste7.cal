@@ -1,0 +1,22 @@
+System EpsilonSystem {
+    centralStar: Star EpsilonEridani {
+        spectralType: K,
+        luminosity: 0.34,
+        age: 0.8,
+        mass: 0.85
+    },
+    planets: [
+        Planet EpsilonPrime {
+            diameter: 5020,
+            mass: 1.0,
+            temperature: 270,
+            atmosphere: "Nitrogen, Methane",
+            composition: "Iron, Silicon, Carbon",
+            orbit: Orbit {
+                semiMajorAxis: 3.39,
+                eccentricity: 0.22
+            },
+            moons: []
+        }
+    ]
+}

@@ -1,7 +1,10 @@
-cd .\grammar\
-
-java -jar antlr-4.13.0-complete.jar -Dlanguage=Python3 callisto.g4
-
 cd ..
 
-python .\TokenGenerator.py .\teste.cal
+python .\SemanticAnalyzer.py '.\testes callisto\teste.cal' 
+python .\SemanticAnalyzer.py '.\testes callisto\teste2.cal' 
+python .\SemanticAnalyzer.py '.\testes callisto\teste3.cal' 
+python .\SemanticAnalyzer.py '.\testes callisto\teste4.cal' 
+python .\SemanticAnalyzer.py '.\testes callisto\teste5.cal' 
+python .\SemanticAnalyzer.py '.\testes callisto\teste6.cal' 
+python .\SemanticAnalyzer.py '.\testes callisto\teste7.cal' 
+python .\SemanticAnalyzer.py '.\testes callisto\teste8.cal' 

@@ -166,6 +166,12 @@ class callistoParser ( Parser ):
             if hasattr( listener, "exitProgram" ):
                 listener.exitProgram(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitProgram" ):
+                return visitor.visitProgram(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -237,6 +243,12 @@ class callistoParser ( Parser ):
             if hasattr( listener, "exitSystem" ):
                 listener.exitSystem(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitSystem" ):
+                return visitor.visitSystem(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -301,6 +313,12 @@ class callistoParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitPlanetList" ):
                 listener.exitPlanetList(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPlanetList" ):
+                return visitor.visitPlanetList(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -388,6 +406,12 @@ class callistoParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitPlanet" ):
                 listener.exitPlanet(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPlanet" ):
+                return visitor.visitPlanet(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -494,6 +518,12 @@ class callistoParser ( Parser ):
             if hasattr( listener, "exitMoonList" ):
                 listener.exitMoonList(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitMoonList" ):
+                return visitor.visitMoonList(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -569,6 +599,12 @@ class callistoParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitMoon" ):
                 listener.exitMoon(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitMoon" ):
+                return visitor.visitMoon(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -659,6 +695,12 @@ class callistoParser ( Parser ):
             if hasattr( listener, "exitStar" ):
                 listener.exitStar(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitStar" ):
+                return visitor.visitStar(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -741,6 +783,12 @@ class callistoParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitOrbit" ):
                 listener.exitOrbit(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitOrbit" ):
+                return visitor.visitOrbit(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 

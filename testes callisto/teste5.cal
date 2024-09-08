@@ -1,0 +1,22 @@
+System GammaSystem {
+    centralStar: Star GammaStar {
+        spectralType: M,
+        luminosity: 0.05,
+        age: 10,
+        mass: 0.1
+    },
+    planets: [
+        Planet GammaPrime {
+            diameter: 3000,
+            mass: 0.2,
+            // Temperatura ausente, erro proposital
+            atmosphere: "Carbon Dioxide",
+            composition: "Iron, Magnesium",
+            orbit: Orbit {
+                semiMajorAxis: 0.05,
+                eccentricity: 0.01
+            },
+            moons: []
+        }
+    ]
+}

@@ -10,7 +10,7 @@ PLANETS: 'planets';
 
 SPECTRAL_TYPE: 'O' | 'B' | 'A' | 'F' | 'G' | 'K' | 'M';
 NAME: ('a'..'z'|'A'..'Z')+;
-NUMBER: ('0'..'9')+ ('.' ('0'..'9')+)?;
+NUMBER: '-'? ('0'..'9')+ ('.' ('0'..'9')+)?;
 STRING 	: '"' ( ESC_SEQ | ~('\r'|'\n'|'\''|'\\'|'"') )* '"';
 fragment
 ESC_SEQ	: '\\\'';

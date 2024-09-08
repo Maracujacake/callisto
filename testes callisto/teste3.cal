@@ -1,0 +1,22 @@
+System BetaSystem {
+    centralStar: Star BetaStar {
+        spectralType: K,
+        luminosity: 0.3,
+        age: 9.7,
+        mass: 0.6
+    },
+    planets: [
+        Planet BetaPrime {
+            diameter: -4500,
+            mass: -0.92, 
+            temperature: -15,
+            atmosphere: "Methane, Hydrogen",
+            composition: "Iron, Nickel, Silicon",
+            orbit: Orbit {
+                semiMajorAxis: 0.7,
+                eccentricity: 0.002
+            },
+            moons: []
+            }
+    ]
+}

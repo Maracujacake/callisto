@@ -1,0 +1,29 @@
+System VegaSystem {
+    centralStar: Star Vega {
+        spectralType: A,
+        luminosity: 40,
+        age: 0.455,
+        mass: 2.135
+    },
+    planets: [
+        Planet VegaPrime {
+            diameter: 10345,
+            mass: 3.4,
+            temperature: 280,
+            atmosphere: "Nitrogen, Oxygen",
+            composition: "Iron, Magnesium, Silicon",
+            orbit: Orbit {
+                semiMajorAxis: 3.1,
+                eccentricity: 0.05
+            },
+            moons: [
+                Moon VegaMoon {
+                    diameter: 1000,
+                    orbitPeriod: 1.1,
+                    density: 2.5,
+                    surfaceType: "Ice"
+                }
+            ]
+        }
+    ]
+}

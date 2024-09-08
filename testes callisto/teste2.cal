@@ -1,0 +1,22 @@
+System AlphaCentauri {
+    centralStar: Star AlphaCentauriA {
+        spectralType: G,
+        luminosity: 1.519,
+        age: 5.3,
+        mass: 1.1
+    },
+    planets: [
+        Planet ProximaCentauriB {
+            diameter: 7166,
+            mass: 1.173,
+            temperature: 234,
+            atmosphere: "Carbon Dioxide, Nitrogen",
+            composition: "Iron, Oxygen, Silicon",
+            orbit: Orbit {
+                semiMajorAxis: 0.0485,
+                eccentricity: 0.1
+            },
+            moons: []
+        }
+    ]
+}
