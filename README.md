@@ -6,7 +6,7 @@
 <p align=center>A linguagem para catalogação de corpos celestes</p>
 
 <p align=center>
-    <a href=https://elysiajs.com>Documentação</a> | <a href=https://discord.gg/eaFJ2KDJck>Exemplos de uso</a> |  <a href=https://elysiajs.com>História</a>
+    <a href=#documentação>Documentação</a> | <a href=#exemplos-de-uso>Exemplos de uso</a> |  <a href=#história>História</a>
 </p>
 
 # Documentação
